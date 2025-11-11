@@ -1,0 +1,27 @@
+{
+  "name": "lesson-10-async",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Yosohanomi/lesson-10-async#readme",
+  "bugs": {
+    "url": "https://github.com/Yosohanomi/lesson-10-async/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yosohanomi/lesson-10-async.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --no-cache --public-url ./",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.16.1"
+  }
+}
