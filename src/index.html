@@ -4,8 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <!-- task 1 -->
+    <!-- <button id="start">Start</button>
+    <button id="end">End</button>
+    <div id="counter">0</div> -->
+
+    <!-- task 2 -->
+    <div class="element" id="change-color"></div>
+
+    <!--task 3 -->
+    <div class="container-3">
+        <input type="text" id="message" placeholder="Enter your message">
+        <button id="showMessage">Show message</button>
+    </div>
+    <div class="message-container" id="messageContainer"></div>
+
+    <!-- 4 -->
+    <div class="container">
+        <h1>Генератор випадкових RGB кольорів</h1>
+        
+        <div class="color-display" id="colorBox">
+            <div id="currentColor">RGB(255, 255, 255)</div>
+            <div id="hexColor">#FFFFFF</div>
+        </div>
+        
+        <div class="controls">
+            <button id="btn1">Старт авто-зміни</button>
+            <button id="btn2">Стоп авто-зміни</button>
+            <button id="btn3">Змінити колір раз</button>
+        </div>
+        
+        <div class="color-info">
+            <label for="interval">Інтервал зміни (мс):</label>
+            <input type="number" id="interval" value="1000" min="100" max="5000">
+            
+            <div class="rgb-values">
+                R: <span id="rValue">255</span> |
+                G: <span id="gValue">255</span> |
+                B: <span id="bValue">255</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="container">
+        <h2>Функція printNumbers</h2>
+        
+        <div class="input-group">
+            <label for="from">Від:</label>
+            <input type="number" id="from" value="1">
+        </div>
+        
+        <div class="input-group">
+            <label for="to">До:</label>
+            <input type="number" id="to" value="5">
+        </div>
+        
+        <button id="btnStart">Запустити через setInterval</button>
+        <button  id="btnTime">Запустити через setTimeout</button>
+        <button id="btnCounting">Зупинити</button>
+        
+        <div class="output" id="output1"></div>
+    </div>
+
+    <!-- 6 -->
+        <div class="controls">
+            <button id="btnChangeStyle">Почати зміну стилів</button>
+            <button id="btnStopChangeStyle">Зупинити</button>
+        </div>
+        <div class="style-block" id="styleBlock">Блок, що змінює стилі</div>
     <script src="./index.js" type="module"></script>
 </body>
 </html>
